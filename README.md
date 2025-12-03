@@ -1,5 +1,7 @@
 # MechSearch
 
+(UNDER DEVELOPMENT)
+
 **MechSearch** is a modern web platform designed to connect customers with auto repair shops and certified automotive professionals. The application allows users to find, filter, and contact mechanics quickly and efficiently, simplifying the search process for automotive services.
 
 ## 📋 About the Product
