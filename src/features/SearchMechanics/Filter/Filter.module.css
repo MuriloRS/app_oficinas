@@ -1,0 +1,281 @@
+.mobileFilter {
+  display: none;
+}
+
+.filterButton {
+  width: 100%;
+  background-color: #ef4444;
+}
+
+.mobileFilterButtons {
+  display: none;
+  justify-content: space-between;
+}
+
+.mobileFilterTrigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mechanicNameInput {
+  font-size: 16px;
+}
+
+.drawerContent {
+  background-color: white;
+  padding: 0 20px;
+}
+
+.drawerFilterForm {
+  overflow-y: auto;
+  max-height: 350px;
+  padding-bottom: 70px;
+}
+
+.sidebar {
+  background: white;
+  padding: 0;
+}
+
+.filtersSection {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 15px;
+  width: 300px;
+  position: sticky;
+  top: 70px;
+  max-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.searchInput::placeholder {
+  color: #9ca3af;
+}
+
+.locationFilter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.locationSelect {
+  width: 100%;
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.clearButtonIcon {
+  font-size: 0.8rem;
+}
+
+.ratingFilters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ratingOption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.ratingText {
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+@media (max-width: 768px) {
+  .mobileFilterButtons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desktopFilter {
+    display: none;
+  }
+}
+
+.filterGroup {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.lastFilterGroup {
+  margin-bottom: 0;
+}
+
+.filterLabel {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filterForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.scrollableFields {
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 4px;
+}
+
+.inputError {
+  border-color: hsl(var(--destructive)) !important;
+}
+
+.errorMessage {
+  color: hsl(var(--destructive));
+  font-size: 0.8rem;
+  margin-top: 4px;
+  display: block;
+}
+
+.vehicleTypeOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radioOption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.radioInput {
+  width: 16px;
+  height: 16px;
+  accent-color: hsl(var(--destructive));
+}
+
+.radioLabel {
+  font-size: 0.9rem;
+  color: #374151;
+  cursor: pointer;
+  user-select: none;
+}
+
+.formActions {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.submitButton {
+  background-color: hsl(var(--destructive));
+  color: hsl(var(--destructive-foreground));
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  flex: 1;
+  width: 100%;
+}
+
+.submitButton:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.closeButton {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .scrollableFields {
+    overflow-y: visible;
+    flex: none;
+    padding-right: 0;
+  }
+
+  .filterForm {
+    overflow: visible;
+  }
+
+  .formActions {
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    margin-top: 0;
+  }
+
+  .lastFilterGroup {
+    padding-bottom: 100px;
+  }
+
+  .closeButton {
+    display: block;
+  }
+}

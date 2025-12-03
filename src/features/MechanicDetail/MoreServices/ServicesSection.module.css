@@ -1,0 +1,48 @@
+.titleWithIcon {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.serviceCard {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 20px 24px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.serviceCard:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.serviceNameContainer {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.serviceName {
+  font-size: 15px;
+  font-weight: 600;
+  color: #4f1313;
+  margin: 0 0 8px 0;
+}
+
+.serviceDescription {
+  font-size: 14px;
+  color: #464444;
+  margin: 0;
+  line-height: 1.5;
+}

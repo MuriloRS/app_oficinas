@@ -1,0 +1,242 @@
+.resultsSection {
+  background: white;
+}
+
+.viewToggleContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.viewToggle {
+  display: flex;
+  margin: auto;
+  gap: 8px;
+  background: #f9fafb;
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.viewToggleButton {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.viewToggleButton:hover {
+  background: #636363;
+}
+
+.mechanicCard {
+  display: flex;
+  gap: 16px;
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mechanicCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.selectedMechanic {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background: #f8fafc;
+}
+
+.mechanicImageContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mechanicImage {
+  width: 100px;
+  background: rgb(255, 255, 255);
+  padding: 3px;
+}
+
+.mechanicImage svg {
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.mechanicInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mechanicNameButton {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0;
+  color: #1f2937;
+  width: fit-content;
+  cursor: pointer;
+  text-align: left;
+}
+
+.mechanicNameButton:hover {
+  opacity: 0.8;
+}
+
+.mechanicNameButton h3 {
+  display: inline-flex;
+  align-items: center;
+}
+
+.mechanicNameButton svg {
+  height: 16px;
+  width: 16px;
+  margin-left: 5px;
+}
+
+.mechanicRating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.mechanicRatingMobile {
+  display: none;
+}
+
+.reviewCount {
+  font-size: 0.9rem;
+  color: #41454d;
+  font-weight: 500;
+}
+
+.servicesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.serviceTag {
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+}
+
+.rigthSection {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.priceRange {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.priceLabel {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.bookButton {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bookButton:hover {
+  background: #dc2626;
+}
+
+.popoverContent {
+  background-color: white;
+  text-align: center;
+}
+
+.popoverContentBadge {
+  margin: 5px;
+}
+
+.dialogContent {
+  background-color: white;
+}
+
+.ratingFavoriteSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ratingFavoriteSection button {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .mechanicCard {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mechanicInfo {
+    margin-bottom: 10px;
+  }
+
+  .mechanicImage {
+    width: 70px;
+  }
+  .rigthSection {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .bookButton {
+    width: 100%;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  .mechanicRating {
+    display: none;
+  }
+
+  .mechanicRatingMobile {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .viewToggle {
+    position: absolute;
+    bottom: 10px;
+    margin: auto;
+  }
+}

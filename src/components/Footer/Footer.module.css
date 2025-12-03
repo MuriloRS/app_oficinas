@@ -1,0 +1,155 @@
+.footer {
+  background: #1f2937;
+  color: white;
+  position: relative;
+}
+
+.redStripe {
+  height: 4px;
+  background: #e8042a;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px 30px;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.brandSection {
+  max-width: 300px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.logoIcon {
+  width: 24px;
+  height: 24px;
+  color: #e8042a;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.brandDescription {
+  color: #9ca3af;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerLink {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.footerLink:hover {
+  color: #e8042a;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.socialIcon {
+  width: 20px;
+  height: 20px;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.socialIcon:hover {
+  color: #e8042a;
+}
+
+.footerBottom {
+  border-top: 1px solid #374151;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.copyright {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .footerContent {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 40px 16px 25px;
+  }
+
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .brandSection {
+    max-width: none;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+
+  .linksList {
+    align-items: center;
+  }
+}

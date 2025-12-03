@@ -1,0 +1,8 @@
+.mapsButton {
+  color: black;
+  cursor: pointer;
+}
+
+.mapsButton:hover {
+  transform: scale(1.1);
+}

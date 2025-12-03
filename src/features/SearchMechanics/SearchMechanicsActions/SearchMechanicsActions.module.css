@@ -1,0 +1,120 @@
+.searchMechanicsActionsMobile {
+  display: none;
+}
+
+.resultsCountMobile {
+  display: none;
+}
+
+.resultsHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.resultsCount {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.resultsCount span {
+  color: #6b7280;
+  font-weight: 400;
+  font-size: 0.95rem;
+  display: block;
+}
+
+.sortSelect {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.sortContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.searchMechanicsActionsDesktop {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.orderContainer {
+  position: relative;
+}
+
+.orderMenu {
+  position: absolute;
+  top: calc(100% + 6px);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding: 6px;
+  min-width: 200px;
+  right: 0;
+  z-index: 50;
+}
+
+.orderItem {
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.orderItem:hover {
+  background: #f3f4f6;
+}
+
+.viewToggleButton {
+  background-color: #f3f3f3;
+  font-size: 14px;
+  border: 1px solid #d7d7d7;
+}
+
+@media (max-width: 768px) {
+  .searchMechanicsActionsDesktop {
+    display: none;
+  }
+  .sortContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .searchMechanicsActionsMobile {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    background-color: #f0f0f0;
+    padding: 5px;
+    justify-content: space-around;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .resultsCountMobile {
+    display: block;
+  }
+}

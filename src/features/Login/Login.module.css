@@ -1,0 +1,97 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  width: 380px;
+  position: absolute;
+  top: 62px;
+  right: 30px;
+  overflow: hidden;
+  box-shadow: 0 3px 36px -6px rgba(42, 42, 47, 0.19);
+}
+
+.signupBtn {
+  background-color: #e8042a !important;
+  color: white !important;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+.signupBtn:hover {
+  background-color: #dc2626 !important;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socialButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  gap: 8px;
+}
+
+.divider {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.emailButton {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.register {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.register a {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.terms {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.terms a {
+  color: #000;
+  text-decoration: underline;
+}

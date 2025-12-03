@@ -1,0 +1,21 @@
+.starsContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.starWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.starEmpty {
+  fill: #e0e0e0;
+}
+
+.starFilled {
+  fill: #ffc107;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

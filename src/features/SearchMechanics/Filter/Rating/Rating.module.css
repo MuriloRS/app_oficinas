@@ -1,0 +1,49 @@
+.ratingFilter {
+  display: flex;
+  flex-direction: column;
+}
+
+.ratingInput {
+  height: 32px;
+}
+
+.filterLabel {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ratingOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ratingOption input {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.stars {
+  margin-right: 6px;
+}
+
+.star {
+  color: lightgray;
+  font-size: 24px;
+}
+
+.starFilled {
+  color: gold;
+  font-size: 24px;
+}
+
+.label {
+  font-size: 16px;
+  color: #444;
+}

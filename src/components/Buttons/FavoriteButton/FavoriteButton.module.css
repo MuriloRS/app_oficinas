@@ -1,0 +1,13 @@
+.heartIcon {
+  width: 22px;
+  height: 22px;
+  stroke: #ff4d6d;
+  fill: none;
+  transition: all 0.25s ease;
+  margin-right: 10px;
+}
+
+.active {
+  stroke: #ff4d6d;
+  fill: #ff4d6d;
+}
